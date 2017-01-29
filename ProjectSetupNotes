@@ -85,7 +85,9 @@ components
   -sass
   -scripts
 
-
+***************************************************************************************************
 Setup Git repository locally
 
 $ git init (from the project root folder)
+$ git add . (to add all)
+$ git commit -m "First Commit" (make first commit)
