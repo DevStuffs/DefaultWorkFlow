@@ -1,0 +1,11 @@
+{
+  "name": "workflowsetup",
+  "version": "0.0.1",
+  "description": "setting up drfaults for a project template",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "SD Murphy"
+}

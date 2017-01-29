@@ -1,0 +1,91 @@
+
+
+INSTALLING THE REQUIREMENTS (the "-g" means to install Globally)
+
+Git from*       https://git-scm.com/download
+Node.js from*   https://nodejs.org/en/ ($ node --version)
+Ruby            (already on Mac) ($ ruby --version) ($ sudo gem update)
+Gulp            ($ sudo npm install -g gulp)
+Browserify      ($ sudo install -g browserify)
+SASS            ($ sudo gem install sass)
+Compass         ($ sudo gem install compass)
+***************************************************************************************************
+
+*   Create a folder
+
+CREATING a package.json FILE (all of the setup answers can be manually changed from within the file itself)
+1.  Add a package.json file (will store basic info about the project)
+2.  from terminal, switch to folder directory, or type cd/ and drag the folder into the terminal screen
+3.  $ npm install
+4.  "name: (WorkFlowSetup)" <- asks for a name for the project - enter (no capital letters)
+5.  "version: (1.0.0)" <- very first time we start on the app, so enter 0.0.1
+6.  "Description: " <- enter whatever
+7.  "entry point:"  <- this would be the main .js file for the project, so initially just hit enter
+8.  "test command:" <- blank for now
+9.  "git repository" <- ik known, paste in url, otherwise, enter "?.git" to create an entry in the json file
+10. "keywords" <- keywords associated with the project if needed
+11. "author" <- enter author name
+12. "License:" <- enter license info if needed.
+
+
+"About to write to /Users/sdmurphy/Desktop/Lynda/WorkFlowSetup/package.json:"
+
+{
+  "name": "workflowsetup",
+  "version": "0.0.1",
+  "description": "setting up drfaults for a project template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "SD Murphy",
+  "license": "ISC"
+}
+
+13. " Is This OK?" <- will show a preview of what will be created, confirm and enter "yes".
+
+***************************************************************************************************
+
+Sample index.html
+https://gist.github.com/planetoftheweb/cb52e7a8d833756fc9dd
+
+Coffeescript file:
+https://gist.github.com/planetoftheweb/f03079bc7624c19ffda5
+
+pixgrid.js file:
+https://gist.github.com/planetoftheweb/e992f987f2e9b18af1a4
+
+rclick.js file:
+https://gist.github.com/planetoftheweb/6ab7d8f8ac149b38b427
+
+template.js file:
+https://gist.github.com/planetoftheweb/d5e25dfa9d47d51f5273
+
+sassfiles.scss file:
+https://gist.github.com/planetoftheweb/de29b990779d91145baf
+
+.gitignore file:
+https://gist.github.com/planetoftheweb/8675d1ba604020b43c6f
+
+***************************************************************************************************
+CREATE FOLDER STRUCTURE
+
+builds
+  -development
+    -images
+    -css
+    -js
+  -production
+components
+  -coffee
+  -sass
+  -scripts
+
+
+Setup Git repository locally
+
+$ git init (from the project root folder)
