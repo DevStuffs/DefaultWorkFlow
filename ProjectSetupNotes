@@ -131,3 +131,6 @@ Install compass for processing SASS:
 $ npm install --save-dev gulp-compass
 
 When updating the gulp file, creating the var "sassSources" only requires 'components/sass/styles.scss' because teh sass files themselves do all of the "includes", so no need to list them all individually. Create gulp task ..
+
+Install Gulp Connect (creates a server so we can do a live reload of the page)
+$ npm install --save-dev gulp-connect
