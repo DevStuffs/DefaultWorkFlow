@@ -113,7 +113,10 @@ $ npm install --save-dev gulp
 (the "-dev" installs development dependencies)
 
 $ npm install --save-dev gulp-util
+ran "gulp util" with a sample log message to make sure it was working correctly
+
 $ npm install --save-dev gulp-concat (for compiling and combing all the js files)
+ran "gulp js" to verify thatthe script.js file was created correctly
 
 Instead of using CDN to include libraries we'll use broswerify to add them as Dependencies
 $ npm install --save-dev gulp-browserify
@@ -121,4 +124,10 @@ $ npm install --save-dev jquery (needed for browserify)
 $ npm install --save-dev mustache (needed for browserify)
 In the gulp file, we add a variable, and a pipe to the js task
 
-added " $ = require 'jquery' " to the components/coffee/tagline.coffee script file 
+added " $ = require 'jquery' " to the components/coffee/tagline.coffee script file
+re-ran gulp commands "gulp coffee, gulp js" to rebuild the script.js file
+
+Install compass for processing SASS:
+$ npm install --save-dev gulp-compass
+
+When updating the gulp file, creating the var "sassSources" only requires 'components/sass/styles.scss' because teh sass files themselves do all of the "includes", so no need to list them all individually. Create gulp task ..
