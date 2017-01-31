@@ -22,7 +22,7 @@ CREATING a package.json FILE (all of the setup answers can be manually changed f
 6.  "Description: " <- enter whatever
 7.  "entry point:"  <- this would be the main .js file for the project, so initially just hit enter
 8.  "test command:" <- blank for now
-9.  "git repository" <- ik known, paste in url, otherwise, enter "?.git" to create an entry in the json file
+9.  "git repository" <- if known, paste in url, otherwise, enter "?.git" to create an entry in the json file
 10. "keywords" <- keywords associated with the project if needed
 11. "author" <- enter author name
 12. "License:" <- enter license info if needed.
@@ -65,6 +65,9 @@ https://gist.github.com/planetoftheweb/6ab7d8f8ac149b38b427
 template.js file:
 https://gist.github.com/planetoftheweb/d5e25dfa9d47d51f5273
 
+data.json file:
+https://gist.github.com/planetoftheweb/2c2f3b03b72a7f2ae923
+
 sassfiles.scss file:
 https://gist.github.com/planetoftheweb/de29b990779d91145baf
 
@@ -91,3 +94,22 @@ Setup Git repository locally
 $ git init (from the project root folder)
 $ git add . (to add all)
 $ git commit -m "First Commit" (make first commit)
+add readme.md
+make 2nd commit
+
+SETUP REPOSITORY
+https://github.com/new
+name it & add description
+
+Push an existing repository from the command line
+
+git remote add origin https://github.com/DevStuffs/DefaultWorkFlow.git
+git push -u origin master
+***************************************************************************************************
+
+ADDING GULP LOCALLY FOR TASKS
+
+$ npm install --save-dev gulp
+(the "-dev" installs development dependencies)
+
+$ npm install --save-dev gulp-util

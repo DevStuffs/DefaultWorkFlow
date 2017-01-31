@@ -2,10 +2,13 @@
   "name": "workflowsetup",
   "version": "0.0.1",
   "description": "setting up drfaults for a project template",
-  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "?.git"
+    "url": "https://github.com/DevStuffs/DefaultWorkFlow.git"
   },
-  "author": "SD Murphy"
+  "author": "SD Murphy",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8"
+  }
 }
