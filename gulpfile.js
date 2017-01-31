@@ -37,8 +37,11 @@ gulp.task('compass', function() {
       line_comments: true,
       line_numbers: true,
       lineNumbers: true,
-      comments: true
+      comments: true // this didn't seem to work until I made a change to the actuall sass files first, then ran the all/default task at the bottom
     })
     .on('error', gutil.log))
     .pipe(gulp.dest('builds/development/css'))
 });
+
+//this will run by simply typing 'gulp', without adding the 'default'. Gulp assumesit is default
+gulp.task('default', ['coffee','js','compass']);
