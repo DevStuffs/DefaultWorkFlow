@@ -50,4 +50,4 @@ gulp.task ('watch', function() {
 });
 
 //this will run by simply typing 'gulp', without adding the 'default'. Gulp assumes it is default
-gulp.task('default', ['coffee','js','compass']);
+gulp.task('default', ['coffee','js','compass', 'watch']);
