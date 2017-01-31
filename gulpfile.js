@@ -43,5 +43,11 @@ gulp.task('compass', function() {
     .pipe(gulp.dest('builds/development/css'))
 });
 
-//this will run by simply typing 'gulp', without adding the 'default'. Gulp assumesit is default
+gulp.task ('watch', function() {
+  gulp.watch(coffeeSources,['coffee']);
+  gulp.watch(jsSources,['js']);
+  gulp.watch('components/sass/*.scss',['compass']);
+});
+
+//this will run by simply typing 'gulp', without adding the 'default'. Gulp assumes it is default
 gulp.task('default', ['coffee','js','compass']);
