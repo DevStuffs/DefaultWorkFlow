@@ -113,3 +113,12 @@ $ npm install --save-dev gulp
 (the "-dev" installs development dependencies)
 
 $ npm install --save-dev gulp-util
+$ npm install --save-dev gulp-concat (for compiling and combing all the js files)
+
+Instead of using CDN to include libraries we'll use broswerify to add them as Dependencies
+$ npm install --save-dev gulp-browserify
+$ npm install --save-dev jquery (needed for browserify)
+$ npm install --save-dev mustache (needed for browserify)
+In the gulp file, we add a variable, and a pipe to the js task
+
+added " $ = require 'jquery' " to the components/coffee/tagline.coffee script file 
